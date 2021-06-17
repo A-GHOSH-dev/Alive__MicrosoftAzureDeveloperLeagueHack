@@ -329,7 +329,7 @@ html,body {
 
 <div class="form-control">
   <label for="name" id="label-name">
-    Industry/Company Name:
+    Distributer Industry/Company Name:
   </label>
 
 
@@ -400,7 +400,48 @@ html,body {
     id="email"
     placeholder="Enter your emailID" />
 </div>
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Distributers of:
+  </label>
 
+<form method="post" action="">
+<div id="newlink">
+<div>
+<table border=0>
+	<tr>
+		<td> Name: </td>
+		<td> <input type="text" name="linkurl[]" value=""> </td>
+	</tr>
+	<tr>
+		<td> Quantity: </td>
+		<td>  <textarea name="linkdesc[]" cols="50" rows="5" ></textarea> </td>
+	</tr>
+</table>
+</div>
+</div>
+	
+<p id="addnew">
+	<a href="javascript:new_link()">Add New </a>
+</p>
+</form>
+
+
+
+<div id="newlinktpl" style="display:none">
+<div>
+<table border=0>
+	<tr>
+		<td> Name: </td>
+		<td><input type="text" name="linkurl[]" value=""></td>
+	</tr>
+	<tr>
+		<td> Quantity: </td>
+		<td><textarea name="linkdesc[]" cols="50" rows="5" ></textarea> </td>
+	</tr>
+</table>
+</div>
+</div>
 
 </form>   
 
@@ -408,74 +449,151 @@ html,body {
 
       </div>
 
-
+</div>
 
 
 
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-green-100 text-green-600 text-xs font-medium tracking-widest">TYPES OF MANUFACTURE</span>
+        <span class="inline-block py-1 px-2 rounded bg-green-100 text-green-600 text-xs font-medium tracking-widest">Distribution</span>
         <form id="form">
 
 
           <div class="form-control">
-            <label><b>What does your Industry Manufacture (Final product)?
-                (Check all that apply)</b>
+            <label>What does your Company Distribute? (Final product)
+                (Check all that apply)
             </label>
         
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">Industrial Gaseous Oxygen</input></label>
+            
                        <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">Industrial Liquid Oxygen</input></label>
+                       name="inp">Temporary filled Oxygen Tankers (To supply oxygen to the hospitals)</input></label>
+
+                       <div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Number of Tankers leaving per day:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Number of Tankers leaving" />
+</div>
+
+
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Capacity of each (in MT):
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Capacity in MT" />
+</div>
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Capacity of each (in MT) * Number of Tankers leaving per day:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Total quantity of oxygen distributed" />
+</div>
+
+
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">Medical Gaseous Oxygen</input></label>
+                       name="inp">Trucks containing Filled Oxygen Cylinders</input></label>
                        <label for="inp-2">
+
+                        <div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Number of Trucks leaving per day:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Number of Trucks leaving" />
+</div>
+
+
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+   Average Number of Cylinders in each:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Capacity" />
+</div>
+
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+   Average Capacity of each Cylinders:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Capacity" />
+</div>
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Average Capacity of each cylinder * Number of Cylinders in each truck * Number of Trucks leaving per day:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="Total quantity of oxygen distributed" />
+</div>
+
+
+
                 <input type="checkbox"
-                       name="inp">Medical Liquid Oxygen</input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">Vacuum Insulated Evaporator</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Oxygen Concentrators</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Industrial Oxygen Cylinders</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">Medical Oxygen Cylinders</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Oxygen Tankers</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Nasal Cannula</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Simple Face Mask</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Partial Rebreather</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Oxymask</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Venturi</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Bag Valve Mask</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Non rebreather</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Nasal Catheter</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Flow Meter</input></label>
+                       name="inp">Trucks containing Oxygen Equipments</input></label>
+                       <br><br>
+
+                       <div class="form-control">
+  <label for="emailp" id="label-emailp">
+    If other Equipments, what are the equipments:
+  </label>
+
+
+ 
+<form method="post" action="">
+<div id="newlink">
+<div>
+<table border=0>
+	<tr>
+		<td> Name: </td>
+		<td> <input type="text" name="linkurl[]" value=""> </td>
+	</tr>
+	<tr>
+		<td> Quantity: </td>
+		<td>  <textarea name="linkdesc[]" cols="50" rows="5" ></textarea> </td>
+	</tr>
+</table>
+</div>
+</div>
+	
+<p id="addnew">
+	<a href="javascript:new_link()">Add New </a>
+</p>
+</form>
+
+
+
+<div id="newlinktpl" style="display:none">
+<div>
+<table border=0>
+	<tr>
+		<td> Name: </td>
+		<td> <input type="text" name="linkurl[]" value=""> </td>
+	</tr>
+	<tr>
+		<td> Quantity: </td>
+		<td><textarea name="linkdesc[]" cols="50" rows="5" ></textarea> </td>
+	</tr>
+</table>
+</div>
+</div>
                       
                        
         </div>
