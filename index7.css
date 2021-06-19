@@ -1,11 +1,11 @@
 
 		/* Styling the Form (Color, Padding, Shadow) */
 		form {
-			background-color: rgb(216, 231, 253);
+			background-color: rgb(243, 227, 253);
 			width: 100%;
 			margin: 50px auto;
 			padding: 30px 20px;
-			box-shadow: 2px 5px 10px rgba(28, 59, 240, 0.795);
+			box-shadow: 2px 5px 10px rgb(153, 92, 250);
 		}
 
 		/* Styling form-control Class */
