@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="index9.css" rel="stylesheet">
     <script src="index9.js"></script>
-    <title>Oxygen Manufacturer</title>
+    <title>Alive</title>
     <style>
       
 
@@ -297,7 +297,7 @@ html,body {
  
         
       </div>
-      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="images/cov5.png" alt="step">
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="images/cov11.png" alt="step">
     </div>
   </div>
 </section>
@@ -320,7 +320,7 @@ html,body {
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-12">
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">BASIC DETAILS</span>
+        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">First Done taken Individuals</span>
         
 
 
@@ -329,17 +329,150 @@ html,body {
 
 <div class="form-control">
   <label for="name" id="label-name">
-    Industry/Company Name:
+    Name:
   </label>
 
 
   <input type="text"
     id="name"
-    placeholder="Enter Industry name" />
+    placeholder="name" />
+</div>
+<br>
+<div class="form-control">
+<label for="birthday">DOB:</label>
+<input type="date" id="birthday" name="birthday">
+</div>
+<div class="form-control">
+  <label for="state" id="label-state">
+  Location:
+  </label>
+
+<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+<select id ="state" class="form-control" required></select>
+<script language="javascript">print_state("sts");</script>
+</div>
+
+<br>
+
+<div class="form-control">
+  <label for="email" id="label-email">
+    Contact Email ID:
+  </label>
+
+  <input type="email"
+    id="email"
+    placeholder="Enter email" />
+</div>
+<br>
+<div class="form-control">
+  <label for="email" id="label-email">
+    Contact phone number:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="phone number" />
+</div>
+<br>
+<div class="form-control">
+  <label for="email" id="label-email">
+    Aadhar Number:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="aadhar number" />
+</div>
+<div class="form-control">
+  <label for="email" id="label-email">
+   Age:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="age" />
 </div>
 
 
+<div class="form-control">
+  <label for="type" id="label-type">
+    Vaccine Type:
+  </label>
+  
 
+  <select name="role" id="role">
+    <option value="Government">Covaxin</option>
+    <option value="Private">Covishield</option>
+    <option value="Semi">
+      SputnikV
+    </option>
+    
+  </select>
+</div>
+
+
+<div class="form-control">
+  <label for="namep" id="label-namep">
+    Centre Name:
+  </label>
+
+
+  <input type="text"
+    id="namep"
+    placeholder="Enter Centre name" />
+</div>
+
+<div class="form-control">
+  <label for="emailp" id="label-emailp">
+    Side effects (if any):
+  </label>
+
+  <input type="email"
+    id="email"
+    placeholder="side effects list by comma" />
+</div>
+<div class="form-control">
+<label for="birthday">Date of taking first dose:</label>
+<input type="date" id="birthday" name="birthday">
+</div>
+<div class="form-control">
+<label for="birthday">Date given for second dose:</label>
+<input type="date" id="birthday" name="birthday">
+</div>
+<div class="form-control">
+<label for="myfile">Upload First dose certificate downloaded from cowin site:</label>
+<input type="file" id="myfile" name="myfile">
+</div>
+</form>   
+
+
+
+      </div>
+
+
+
+
+
+      <div class="p-12 md:w-1/2 flex flex-col items-start">
+        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Second Dose Completed Individuals</span>
+        
+        <form id="form">
+
+
+<div class="form-control">
+  <label for="name" id="label-name">
+    Name:
+  </label>
+
+
+  <input type="text"
+    id="name"
+    placeholder="name" />
+</div>
+<div class="form-control">
+<label for="birthday">DOB:</label>
+<input type="date" id="birthday" name="birthday">
+</div>
 <div class="form-control">
   <label for="state" id="label-state">
   Location:
@@ -359,21 +492,48 @@ html,body {
 
   <input type="email"
     id="email"
-    placeholder="Enter company email" />
+    placeholder="Enter email" />
+</div>
+<div class="form-control">
+  <label for="email" id="label-email">
+    Contact phone number:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="phone number" />
+</div>
+<div class="form-control">
+  <label for="email" id="label-email">
+    Aadhar Number:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="aadhar number" />
+</div>
+<div class="form-control">
+  <label for="email" id="label-email">
+   Age:
+  </label>
+
+  <input type="number"
+    id="email"
+    placeholder="age" />
 </div>
 
 
 <div class="form-control">
   <label for="type" id="label-type">
-    Type of Company:
+    Vaccine Type:
   </label>
   
 
   <select name="role" id="role">
-    <option value="Government">Government/Public</option>
-    <option value="Private">Private</option>
+    <option value="Government">Covaxin</option>
+    <option value="Private">Covishield</option>
     <option value="Semi">
-      Semi Government
+      SputnikV
     </option>
     
   </select>
@@ -382,1862 +542,48 @@ html,body {
 
 <div class="form-control">
   <label for="namep" id="label-namep">
-    Your Name:
+    Centre Name:
   </label>
 
 
   <input type="text"
     id="namep"
-    placeholder="Enter your name" />
+    placeholder="Enter Centre name" />
 </div>
 
 <div class="form-control">
   <label for="emailp" id="label-emailp">
-    Your Email ID:
+    Side effects (if any):
   </label>
 
   <input type="email"
     id="email"
-    placeholder="Enter your emailID" />
+    placeholder="side effects list by comma" />
 </div>
-
-
-</form>   
-
-
-
-      </div>
-
-
-
-
-
-      <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">TYPES OF MANUFACTURE</span>
-        <form id="form">
-
-
-          <div class="form-control">
-            <label><b>What does your Industry Manufacture (Final product)?
-                (Check all that apply)</b>
-            </label>
-        
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">Industrial Gaseous Oxygen</input></label>
-                       <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">Industrial Liquid Oxygen</input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">Medical Gaseous Oxygen</input></label>
-                       <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">Medical Liquid Oxygen</input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">Vacuum Insulated Evaporator</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Oxygen Concentrators</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Industrial Oxygen Cylinders</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">Medical Oxygen Cylinders</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Oxygen Tankers</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Nasal Cannula</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Simple Face Mask</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Partial Rebreather</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Oxymask</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Venturi</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Bag Valve Mask</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Non rebreather</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Nasal Catheter</input></label>
-                       <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Flow Meter</input></label>
-                      
-                       
-        </div>
-        </form>
-    </div>
-  </div>
-
-</section>
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">INDUSTRIAL GASEOUS OXYGEN</span>
-      
-
-
-      <form id="form">
-
-
 <div class="form-control">
-<label for="name" id="label-name">
-  Quantity in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
+<label for="birthday">Date of taking first dose:</label>
+<input type="date" id="birthday" name="birthday">
 </div>
-
 <div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed as Medical Oxygen in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
+<label for="birthday">Date of taking second dose:</label>
+<input type="date" id="birthday" name="birthday">
 </div>
-
-
-
 <div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
+<label for="myfile">Upload First dose certificate downloaded from cowin site:</label>
+<input type="file" id="myfile" name="myfile">
 </div>
-
 <div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
+<label for="myfile">Upload second dose certificate downloaded from cowin site:</label>
+<input type="file" id="myfile" name="myfile">
 </div>
-
-
-
-</form>   
-
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">INDUSTRIAL LIQUID OXYGEN</span>
-      
-     
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed as Medical Oxygen in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">MEDICAL GASEOUS OXYGEN</span>
-      
-
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed as Medical Oxygen in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">MEDICAL LIQUID OXYGEN</span>
-      
-     
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed as Medical Oxygen in M tonnes:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Vacuum Insulated Evaporator</span>
-      
-
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L)*Quantity distributed (per day)= Quantity of Oxygen capacity:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Oxygen Concentrators</span>
-      
-     
-
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L)*Quantity distributed (per day)= Quantity of Oxygen capacity:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Industrial Oxygen Cylinders</span>
-      
-
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L)*Quantity distributed (per day)= Quantity of Oxygen capacity:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Maximum Size of Cylinders (in cm):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Medical Oxygen Cylinders</span>
-      
-     
-
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each (in L)*Quantity distributed (per day)= Quantity of Oxygen capacity:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Maximum Size of Cylinders (in cm):
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Oxygen Tankers</span>
-      
-
-
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Number of tankers per day distributed for Medical Use:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
- Small Tanker Average Capacity in MT:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Large Tanker Average Capacity in MT:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Average Capacity of each small(in L)*Quantity distributed (per day) +  Average Capacity of each large(in L)*Quantity distributed (per day)= Quantity of Oxygen capacity:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Nasal Cannula</span>
-      
-     
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:<br><br>
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-<br>
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:<br><br>
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-<br>
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-<br><br>
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:<br><br>
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-<br><br>
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br><br>Name of Distributer Company:<br><br>
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>   
-
-
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Simple Face Mask</span>
-      
-
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
 </form>  
-
-
     </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Partial Rebreather</span>
-      
-     
-
-      
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-      </div>
   </div>
-</div>
 
 </section>
 
 
 
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Oxymask</span>
-      
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Venturi</span>
-      
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Bag Valve Mask</span>
-      
-
-
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Non Breather</span>
-      
-     
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-
-      </div>
-  </div>
-</div>
-
-</section>
-
-
-
-<section class="text-gray-600 body-font overflow-hidden">
-
-<div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-wrap -m-12">
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Nasal Catheter</span>
-      
-
-
-     
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-
-
-    </div>
-
-
-
-
-
-    <div class="p-12 md:w-1/2 flex flex-col items-start">
-      <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Flow Meter</span>
-      
-     
-
-      <form id="form">
-
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity per day produced:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-<div class="form-control">
-<label for="name" id="label-name">
-  Quantity distributed for Medical use per day:
-</label>
-
-
-<input type="number"
-  id="name"
-  placeholder="Quantity" />
-</div>
-
-
-
-
-
-
-<div class="form-control">
-            <label for="comment">
-                Areas of distribution: <br>(Please write in this format-> <br> 
-                State1-City1,City2,City3.... <br>
-                State2-City1,City2,City3.... <br>
-                ......)
-            </label>
- 
-            
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-
-<div class="form-control">
-<label for="type" id="label-type">
-  Type of Distributers:
-</label>
-
-
-<select name="role" id="role">
-  <option value="Government">Internal</option>
-  <option value="Private">External</option>
- 
-  
-</select>
-</div>
-
-<div class="form-control">
-  <label for="namep" id="label-namep">
-    (Incase of External Distributer)<br>Name of Distributer Company:
-  </label>
-
-
-  <input type="text"
-    id="namep"
-    placeholder="Enter name of Distributer" />
-</div>
-
-
-
-</form>  
-
-      </div>
-  </div>
-</div>
-
-</section>
 
 
 
@@ -2252,7 +598,21 @@ html,body {
       <div class="flex flex-wrap -m-2">
         
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-64 focus:outline-none hover:bg-indigo-600 rounded text-lg"><b>SUBMIT</b></button>
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-64 focus:outline-none hover:bg-indigo-600 rounded text-lg"><b>SUBMIT if First Dose complete</b></button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-64 focus:outline-none hover:bg-indigo-600 rounded text-lg"><b>SUBMIT if Second Dose complete</b></button>
         </div>
        
       </div>
