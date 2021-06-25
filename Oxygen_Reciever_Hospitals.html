@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="index5.css" rel="stylesheet">
-    <script src="index5.js"></script>
-    <title>Oxygen Manufacturer</title>
+    {% load static %}
+    <link href="{% static 'css/index5.css' %}" rel="stylesheet">
+    {% load static %}
+    <script src="{% static 'js/index5.js' %}"></script>
+    <title>Alive</title>
     <style>
       
 
@@ -177,7 +179,8 @@ html,body {
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <img src="images/logo.png" alt="hackx logo" class="logo">
+            {% load static %}
+            <img src="{% static 'images/logo.png' %}" alt="hackx logo" class="logo">
             
           </div>
         </div>
@@ -297,7 +300,8 @@ html,body {
  
         
       </div>
-      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="images/cov8.png" alt="step">
+      {% load static %}
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="{% static 'images/cov8.png' %}" alt="step">
     </div>
   </div>
 </section>
@@ -313,7 +317,8 @@ html,body {
 <b>
 
 
-
+  <form action="/OxygenRecieverCommunity" method="POST">
+  {% csrf_token %}
 
 <section class="text-gray-600 body-font overflow-hidden">
 
@@ -324,7 +329,8 @@ html,body {
         
 
 
-        <form id="form">
+                    
+
 
 
 <div class="form-control">
@@ -334,7 +340,7 @@ html,body {
 
 
   <input type="text"
-    id="name"
+    id="hname" name="hname"
     placeholder="Enter Hospital name" />
 </div>
 
@@ -358,7 +364,7 @@ html,body {
   </label>
 
   <input type="email"
-    id="email"
+    id="hemail" name="hemail"
     placeholder="Enter company email" />
 </div>
 
@@ -369,7 +375,7 @@ html,body {
   </label>
   
 
-  <select name="role" id="role">
+  <select name="typeof" id="typeof">
     <option value="Government">Government/Public</option>
     <option value="Private">Private</option>
     <option value="Semi">
@@ -387,7 +393,7 @@ html,body {
 
 
   <input type="text"
-    id="namep"
+    id="namep" name="namep"
     placeholder="Enter your name" />
 </div>
 
@@ -397,35 +403,35 @@ html,body {
   </label>
 
   <input type="email"
-    id="email"
+    id="emailp" name="emailp"
     placeholder="Enter your emailID" />
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="beds" id="label-beds">
     Number of beds in total:
   </label>
 
   <input type="number"
-    id="email"
-    placeholder="Number" />
+    id="beds" name="beds"
+    placeholder="Number of beds" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="bedoxy" id="label-bedoxy">
     Number of beds attached to oxygen:
   </label>
 
   <input type="number"
-    id="email"
+    id="bedoxy" name="bedoxy"
     placeholder="Number" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="noofpatientoxyreq" id="label-emailp">
     Number of patients requiring Oxygen admitted approximately each day:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="noofpatientoxyreq"
     placeholder="Number" />
 </div>
 
@@ -449,7 +455,7 @@ html,body {
 <p id="addnew">
 	<a href="javascript:new_link()">Add New </a>
 </p>
-</form>
+                 
 
 
 
@@ -466,7 +472,7 @@ html,body {
 </div>
 </div>
 
-</form>   
+                    
 
 
 
@@ -478,16 +484,16 @@ html,body {
 
       <div class="p-12 md:w-1/2 flex flex-col items-start">
         <span class="inline-block py-1 px-2 rounded bg-pink-50 text-pink-500 text-xs font-medium tracking-widest">OXYGEN STORAGE TANK</span>
-        <form id="form">
+                        
 
 
           <div class="form-control">
-  <label for="type" id="label-type">
+  <label for="availability" id="label-type">
     Available:
   </label>
   
 
-  <select name="role" id="role">
+  <select name="availability" id="role">
     <option value="Government">Yes</option>
     <option value="Private">No</option>
     <option value="Semi">
@@ -498,49 +504,49 @@ html,body {
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="notank" id="label-emailp">
     Number of Tanks:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="notank"
     placeholder="Number of Tanks" />
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="capacitytank" id="label-emailp">
     Capacity of Tanks:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="capacitytank"
     placeholder="Capacity of Tanks" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="capintotank" id="label-emailp">
     Capacity of Tanks* Number:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="capintotank"
     placeholder="Total Oxygen Capacity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="quantoxyreq" id="label-emailp">
     Quantity of Oxygen required per day:
   </label>
 
   <input type="number"
-    id="email"
+    id="email"  name="quantoxyreq"
     placeholder="Quantity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="nopatient" id="label-emailp">
     Number of patients served approximately each day:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="nopatient"
     placeholder="Number" />
 </div>
 <br>
@@ -548,44 +554,44 @@ html,body {
 <br>
 <br>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="shortage" id="label-emailp">
   If any shortage, mention the quantity:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="shortage"
     placeholder="Quantity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="shortprob" id="label-emailp">
   If any shortage, how many patients faced issue?
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="shortprob"
     placeholder="Number" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="deaths" id="label-emailp">
   Any deaths? 
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="deaths"
     placeholder="Number" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="causeshort" id="label-emailp">
   Cause of shortage: Please give valid pointwise proper reasons for shortage:
   </label>
 
   <input type="text"
-    id="email"
+    id="email" name="causeshort"
     placeholder="Causes" />
 </div>
 
 
-        </form>
+                      
     </div>
   </div>
 
@@ -606,27 +612,27 @@ html,body {
       
 
 
-      <form id="form">
+                      
 
 
 <div class="form-control">
-<label for="name" id="label-name">
+<label for="maintain" id="label-name">
   Storage tank maintenance frequency in a year:
 </label>
 
 
 <input type="number"
-  id="name"
+  id="name" name="maintain"
   placeholder="Quantity" />
 </div>
 
 <div class="form-control">
-<label for="name" id="label-name">
+<label for="response" id="label-name">
   Is there a Emergency response team to control Oxygen related disasters?
 </label>
 
 
-<select name="role" id="role">
+<select name="response" id="role">
     <option value="Government">Yes</option>
     <option value="Private">No</option>
     <option value="Semi">
@@ -641,12 +647,12 @@ html,body {
 
 
 <div class="form-control">
-<label for="type" id="label-type">
+<label for="altoxy" id="label-type">
   Alternative oxygen supply present?
 </label>
 
 
-<select name="role" id="role">
+<select name="altoxy" id="role">
   <option value="Government">Yes</option>
   <option value="Private">No</option>
  
@@ -655,27 +661,27 @@ html,body {
 </div>
 
 <div class="form-control">
-  <label for="namep" id="label-namep">
+  <label for="describe" id="label-namep">
     Describe it:
   </label>
 
 
-  <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
+  <textarea name="describe" id="comment"
+                placeholder=" ">
             </textarea>
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="quantaltoxy" id="label-emailp">
     Quantity of alternative oxygen: 
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="quantaltoxy"
     placeholder="In MT" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="filename" id="label-emailp">
     Upload the report of last safety audit or maintenance audit:
   </label>
 <input type="file" id="myFile" name="filename">
@@ -683,12 +689,12 @@ html,body {
   </div>
   <br><br><br>
   <div class="form-control">
-<label for="name" id="label-name">
+<label for="accidents" id="label-name">
   Has there been any accidents or huge shortage incident previously?
 </label>
 
 
-<select name="role" id="role">
+<select name="accidents" id="role">
     <option value="Government">Yes</option>
     <option value="Private">No</option>
     
@@ -697,13 +703,13 @@ html,body {
 </div>
 <br><br><br>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="filenameacc" id="label-emailp">
     Upload the compiled report of all such accidents till date:
   </label>
-<input type="file" id="myFile" name="filename">
+<input type="file" id="myFile" name="filenameacc">
   
   </div>
-</form>   
+                    
 
 
 
@@ -715,16 +721,16 @@ html,body {
 
     <div class="p-12 md:w-1/2 flex flex-col items-start">
         <span class="inline-block py-1 px-2 rounded bg-pink-50 text-pink-500 text-xs font-medium tracking-widest">OXYGEN CYLINDERS</span>
-        <form id="form">
+                        
 
 
           <div class="form-control">
-  <label for="type" id="label-type">
+  <label for="avail" id="label-type">
     Available:
   </label>
   
 
-  <select name="role" id="role">
+  <select name="avail" id="role">
     <option value="Government">Yes</option>
     <option value="Private">No</option>
     <option value="Semi">
@@ -735,68 +741,68 @@ html,body {
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="cylnum" id="label-emailp">
     Number of Cylinders:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="cylnum"
     placeholder="Number of Cylinders" />
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="capcyl" id="label-emailp">
     Capacity of each cylinder:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="capcyl"
     placeholder="Capacity " />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="capcylintonum" id="label-emailp">
     Capacity of cylinders* Number:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="capcylintonum"
     placeholder="Total Oxygen Capacity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="quantoxyperday" id="label-emailp">
     Quantity of Oxygen required per day:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="quantoxyperday"
     placeholder="Quantity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="nopatientedserve" id="label-emailp">
     Number of patients served approximately each day:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="nopatientedserve"
     placeholder="Number" />
 </div>
 
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="tankshortage" id="label-emailp">
   If any shortage, mention the quantity:
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="tankshortage"
     placeholder="Quantity" />
 </div>
 <div class="form-control">
-  <label for="emailp" id="label-emailp">
+  <label for="facedissue" id="label-emailp">
   If any shortage, how many patients faced issue?
   </label>
 
   <input type="number"
-    id="email"
+    id="email" name="facedissue"
     placeholder="Number" />
 </div>
 <div class="form-control">
@@ -819,7 +825,7 @@ html,body {
 </div>
 
 
-        </form>
+                      
     </div>
   </div>
 
@@ -841,7 +847,7 @@ html,body {
       
 
 
-      <form id="form">
+                      
 
         <div class="form-control">
   <label for="emailp" id="label-emailp">
@@ -884,7 +890,7 @@ html,body {
 <p id="addnew">
 	<a href="javascript:new_link()">Add New </a>
 </p>
-</form>
+                 
 
 
 
@@ -921,7 +927,7 @@ html,body {
 <p id="addnew">
 	<a href="javascript:new_link()">Add New </a>
 </p>
-</form>
+                 
 
 
 
@@ -939,7 +945,7 @@ html,body {
 </div>
 </div>
 
-</form>   
+                    
 
 
 
@@ -954,7 +960,7 @@ html,body {
       
      
 
-      <form id="form">
+                      
 
 
 <div class="form-control">
@@ -1048,36 +1054,33 @@ html,body {
 <input type="file" id="myFile" name="filename">
   
   </div>
-</form>   
+
+
+
+  
+                    
+
+
+
+<button type="submit" class="flex mx-auto text-white bg-pink-400 border-0 py-2 px-64 focus:outline-none hover:bg-pink-600 rounded text-lg">SUBMIT</button>
 
 
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-<section class="text-gray-600 body-font relative">
-  <div class="container px-5 py-24 mx-auto">
-    
-    <div class="lg:w-1/2 md:w-2/3 mx-auto">
-      <div class="flex flex-wrap -m-2">
+</form>
+         
         
-        <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-pink-400 border-0 py-2 px-64 focus:outline-none hover:bg-pink-600 rounded text-lg"><b>SUBMIT</b></button>
-        </div>
-       
-      </div>
-    </div>
-  </div>
-</section>
+
+                 
+
+
+
+
+
+
+
 
 
 
@@ -1098,7 +1101,8 @@ html,body {
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="images/logo.png">
+        {% load static %}
+        <img src="{% static 'images/logo.png' %}">
         
       </a>
       

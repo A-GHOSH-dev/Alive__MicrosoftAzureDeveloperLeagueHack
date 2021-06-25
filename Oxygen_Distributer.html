@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="index2.css" rel="stylesheet">
-    <script src="index2.js"></script>
+    {% load static %}
+    <link href="{% static 'css/index2.css' %}" rel="stylesheet">
+    {% load static %}
+    <script src="{%static 'js/index2.js' %}"></script>
     <title>Alive</title>
     <style>
       
@@ -177,7 +179,8 @@ html,body {
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <img src="images/logo.png" alt="hackx logo" class="logo">
+            {% load static %}
+            <img src="{% static 'images/logo.png' %}" alt="hackx logo" class="logo">
             
           </div>
         </div>
@@ -297,7 +300,7 @@ html,body {
  
         
       </div>
-      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="images/cov7.png" alt="step">
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="{% static 'images/cov7.png' %}" alt="step">
     </div>
   </div>
 </section>
@@ -996,7 +999,7 @@ html,body {
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="images/logo.png">
+        <img src="{% static 'images/logo.png' %}">
         
       </a>
       
