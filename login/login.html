@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>login page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asset&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="d-lg-flex justify-content-center align-items-center align-content-center justify-content-lg-center align-items-lg-center" style="transform: scale(1);background: #91d9eb;">
+    <div class="container" style="background: #ffffff;">
+        <div class="row justify-content-center" style="margin: 50px 0px;">
+            <div class="col-md-6" style="background: url(&quot;assets/img/login_card.png&quot;) right / contain no-repeat;border-style: none;border-right-color: rgb(33, 37, 41);width: 500px;">
+                <div>
+                    <p style="margin-top: 10px;margin-left: 10px;padding: 0px 10px;color: #22a1e2;font-size: 50px;letter-spacing: 2px;font-weight: bold;font-family: 'Bungee Shade', serif;text-align: left;">ALIVE</p>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 10px 12px;">
+                <div>
+                    <div>
+                        <div>
+                            <p style="font-size: 25px;letter-spacing: 1px;font-weight: bold;">Login</p>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-user" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i>
+                                <select style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;width: 240px;">
+                                    <option value="" selected="">user type</option>
+                                    <option value="1">oxygen manufacterer</option>
+                                    <option value="2">vaccine manufacturer</option>
+                                    <option value="3">oxygen distributer</option>
+                                    <option value="4">vaccine distributer</option>
+                                    <option value="5">oxygen impoter</option>
+                                    <option value="6">vaccine impoter</option>
+                                    <option value="7">Hospital</option>
+                                    <option value="8">vaccination/covid centers</option>
+                                    <option value="9">public</option>
+                                    <option value="10">indigenious</option>
+                                </select>
+                            </div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-mobile" style="margin-left: 15px;transform: scale(1.75);color: rgb(152,152,152);"></i>
+                                <input id="mobile_n" type="tel" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);" placeholder="Phone Number" autofocus="" autocomplete="on" inputmode="numeric" required="" minlength="10" maxlength="10" pattern="[7-9]{1}[0-9]{9}">
+                            </div>
+                            <div>
+                                <p style="margin-top: 5px; margin-bottom: 10px;text-align: start;">
+                                    <br>
+                                    <button class="btn btn-primary text-center" type="submit"
+                                    style="background: rgba(233,234,236,0.9);border-style: none;border-color: rgb(152,152,152);border-radius: 5px;text-align: center;color: black;" onclick="send_otp()">click here</button> to generate OTP
+                                    <br>
+                                </p>
+                            </div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-lock" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i>
+                                <input type="password" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);" placeholder="OTP"  inputmode="numeric" required="" minlength="6" maxlength="6" pattern="[4-9]{2}[0-9]{4}">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="background: rgb(255,255,255);border-radius: 25px;padding: 0px;margin-top: 15px;">
+                                <button class="btn btn-primary text-center border rounded-pill" type="submit" style="background: #68abe4;border-style: none;border-color: #68abe4;border-radius: 25px;text-align: center;width: 200px;">Submit</button>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 16px;text-align: center;"><br>Don't you have an account?&nbsp; Sign up<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    
+
+</body>
+
+</html>
