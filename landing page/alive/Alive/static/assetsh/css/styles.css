@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#team img{
+  margin-top: -50px;
+}
+#team button{
+  font-size: 20px;
+  color: #555;
+  border-radius: 40px;
+  background-color: #a3cce8;
+  border-color: #a3cce8;
+}

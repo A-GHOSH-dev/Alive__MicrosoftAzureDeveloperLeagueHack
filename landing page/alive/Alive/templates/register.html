@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>signup page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asset&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;display=swap">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assets/fonts/font-awesome.min.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css' %}">
+</head>
+
+<body class="d-lg-flex justify-content-center align-items-center align-content-center justify-content-lg-center align-items-lg-center" style="transform: scale(1);background: #91d9eb;">
+    <div class="container d-flex justify-content-center align-items-center align-content-center align-self-center m-auto" style="background: #ffffff;margin: 50px 75px;">
+        <div class="row justify-content-center" style="margin: 20px 0px;">
+            <div class="col-md-6 justify-content-around align-items-start" style="background: url('{%static 'assets/img/login_card.png' %}') right / contain no-repeat;border-style: none;border-right-color: rgb(33, 37, 41);width: 350px;">
+                <div>
+                    <p style="margin-top: 10px;margin-left: 10px;padding: 0px 10px;color: #22a1e2;font-size: 50px;letter-spacing: 2px;font-weight: bold;font-family: 'Bungee Shade', serif;text-align: left;">ALIVE</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex flex-column justify-content-evenly align-items-start align-content-center align-self-center flex-wrap m-sm-auto m-md-auto m-lg-auto m-xl-auto m-xxl-auto" style="padding: 10px 12px;width: 662px;">
+                <div>
+                    <div>
+                        <div class="d-flex flex-column justify-content-evenly align-self-center flex-wrap my-auto">
+                            <p style="font-size: 25px;letter-spacing: 1px;font-weight: bold;">Registration</p>
+                            <form action="/home" method="post">
+                                {% csrf_token %}
+                            
+                                <div class="d-flex flex-row justify-content-evenly flex-wrap justify-content-xl-start">
+                                
+                                    <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                        <i class="fa fa-user" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i>
+                                        <input type="text" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;" placeholder="user name" name="name">
+                                    </div>
+                                
+                                    <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;margin-left: 5px;width: 241.104px;">
+                                        <i class="fa fa-group" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i>
+                                        <select style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;" name="category">
+                                            <option value="" selected="">User Category</option>
+                                        
+                                            <option value="1">Individual</option>
+                                        
+                                            <option value="2">Company/Group</option>
+                                    
+                                        </select>
+                                    </div>
+                            </div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-address-book" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i>
+                                <input type="text" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;width: 240px;" placeholder="Individual  Address" name="address">
+                            </div>
+                            {% if message %}
+                            <div class="alert alert-{{class}}" style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                {{message}}
+                            </div>
+                            {% endif %}
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-mobile" style="margin-left: 15px;transform: scale(1.75);color: rgb(152,152,152);"></i>
+                                <input type="tel" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);" placeholder="Phone Number" autofocus="" autocomplete="on" inputmode="numeric" name="mobile" required="" minlength="10" maxlength="10" pattern="[7-9]{1}[0-9]{9}">
+                            </div>
+                            {% if message %}
+                            <div class="alert alert-{{class}}" style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                {{message}}
+                            </div>
+                            {% endif %}
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <i class="fa fa-envelope" style="margin-left: 15px;transform: scale(1.75);color: rgb(152,152,152);"></i>
+                                <input type="email" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);" placeholder="Email  Address" autofocus="" autocomplete="on" inputmode="email" name="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></div>
+                            <div style="margin-top: 15px;margin-bottom: 0px;height: 24px;">
+                                <p class="d-flex flex-column justify-content-center align-items-start align-content-center align-self-center">For Company /Industry People</p>
+                            </div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;"><i class="fa fa-building-o" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i><input type="text" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;width: 240px;" placeholder="Industry/Company Name"></div>
+                            <div class="d-flex flex-column justify-content-evenly align-items-start align-content-start" style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;">
+                                <label class="form-label" style="padding: 0px;margin: 2px;width: 350px;height: 26px;font-size: 20px;padding-top: 1px;padding-bottom: 2px;">Company Id/Govt. Provided Permission:<br></label>
+                                <input type="file" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;width: 240px;margin-top: 15px;" placeholder="Industry/Company Name"></div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;margin-left: 5px;"><i class="fa fa-vcard" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i><select style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);border-style: none;border-right-style: none;">
+                                    <option value="" selected="">Company Type</option>
+                                    <option value="1">Oxygen Manufacturer</option>
+                                    <option value="2">Oxygen Distributor</option>
+                                    <option value="3">Oxygen impoter</option>
+                                    <option value="4">Vaccine Manufacturer</option>
+                                    <option value="5">Vaccine Distributor</option>
+                                    <option value="6">Vaccine impoter</option>
+                                    <option value="7">Vaccination / Covid centers</option>
+                                    <option value="8">Hospitals</option>
+                                </select></div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;"><i class="fa fa-address-book" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i><input type="text" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);width: 240px;" placeholder="Company Address"><input type="text" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);width: 240px;border-style: none;border-top-style: solid;border-top-color: rgb(118, 118, 118);border-right-style: solid;border-bottom-style: solid;border-bottom-color: rgb(118, 118, 118);border-left-style: solid;border-left-color: rgb(118, 118, 118);" placeholder="City / District"><select style="margin-top: 15px;margin-left: 38px;background: rgba(233,234,236,0.9);color: rgb(152,152,152);width: 240px;border-color: rgb(152,152,152);border-top-width: 2px;border-top-color: rgb(118, 118, 118);border-right: 3px solid rgb(118, 118, 118);border-bottom: 2px solid rgb(118, 118, 118);border-left: 2px solid rgb(118, 118, 118);">
+                                    <optgroup label="This is a group">
+                                        <option value="1" selected="">State</option>
+                                        <option value="2">Andaman & Nicobar</option>
+                                        <option value="14">Andhra Pradesh</option>
+                                        <option value="14">Arunachal Pradesh</option>
+                                        <option value="14">Assam</option>
+                                        <option value="14">Bihar</option>
+                                        <option value="14">Chandigarh</option>
+                                        <option value="14">Chhattisgarh</option>
+                                        <option value="14">Dadra & Nagar Haveli</option>
+                                        <option value="14">Daman & Diu</option>
+                                        <option value="14">Delhi</option>
+                                        <option value="14">Goa</option>
+                                        <option value="14">Gujarat</option>
+                                        <option value="14">Haryana</option>
+                                        <option value="14">Himachal Pradesh</option>
+                                        <option value="14">Jammu & Kashmir</option>
+                                        <option value="14">Jharkhand</option>
+                                        <option value="14">Karnataka</option>
+                                        <option value="14">Kerala</option>
+                                        <option value="14">Madhya Pradesh</option>
+                                        <option value="14">Jammu & Kashmir</option>
+                                        <option value="14">Jammu & Kashmir</option>
+                                        <option value="14">Maharashtra</option>
+                                        <option value="14">Manipur</option>
+                                        <option value="14">Meghalaya</option>
+                                        <option value="14">Mizoram</option>
+                                        <option value="14">Nagaland</option>
+                                        <option value="14">Orissa</option>
+                                        <option value="14">Pondicherry</option>
+                                        <option value="14">Punjab</option>
+                                        <option value="14">Rajasthan</option>
+                                        <option value="14">Sikkim</option>
+                                        <option value="14">Tamil Nadu</option>
+                                        <option value="14">Tripura</option>
+                                        <option value="14">Uttar Pradesh</option>
+                                        <option value="14">Uttaranchal</option>
+                                        <option value="14">West Bengal</option>                                    
+                                    </optgroup>
+                                </select><input type="password" style="color: rgb(152,152,152);margin-left: 10px;background: rgba(233,234,236,0.9);width: 240px;border-style: none;border-top-style: solid;border-top-color: rgb(118, 118, 118);border-right-style: solid;border-bottom-style: solid;border-bottom-color: rgb(118, 118, 118);border-left-style: solid;border-left-color: rgb(118, 118, 118);" placeholder="Pin code" minlength="6" maxlength="6" pattern="[0-9]{6}"></div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;"><i class="fa fa-mobile" style="margin-left: 15px;transform: scale(1.75);color: rgb(152,152,152);"></i><input type="tel" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);width: 200px;" placeholder="Company's Phone Number" autofocus="" autocomplete="on" inputmode="numeric" required="" minlength="10" maxlength="10" pattern="[7-9]{1}[0-9]{9}"></div>
+                            <div style="background: rgba(233,234,236,0.9);border-radius: 25px;padding: 10px;margin-top: 15px;"><i class="fa fa-envelope" style="margin-left: 15px;transform: scale(1.50);color: rgb(152,152,152);"></i><input type="email" style="background: rgba(233,234,236,0.9);border-style: none;margin-left: 10px;color: rgb(152,152,152);" placeholder="Company's Email Address" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" inputmode="email" autocomplete="on"></div>
+                            <div class="d-flex justify-content-center align-items-center" style="background: rgb(255,255,255);border-radius: 25px;padding: 0px;margin-top: 15px;"><button class="btn btn-primary text-center border rounded-pill" type="submit" value="Register" style="background: #68abe4;border-style: none;border-color: #68abe4;border-radius: 25px;text-align: center;width: 200px;">Submit</button></div>
+                            <div>
+                            </form>
+                                <p style="margin-bottom: 16px;text-align: center;">Already have an account?&nbsp;<a href="{% url 'login' %}">Login</a>&nbsp;<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% load static %}
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

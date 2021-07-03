@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Microsoft alive</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assetsh/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assetsh/fonts/ionicons.min.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assetsh/css/Footer-Dark.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'assetsh/css/styles.css' %}">
+</head>
+
+<body>
+    <!-- landing page -->
+    {% load static %}
+    <section id="home" style="height: 100vh;background: url('{%static 'assetsh/img/ALIVE-bg.png' %}') center / cover;">
+        <nav class="navbar navbar-light navbar-expand-md" style="font-family: Poppins, sans-serif;background: #77BACB;">
+            <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: #444b54;text-align: center;font-size: 40px;">ALIVE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav mx-auto" style="padding: 2px 8px;">
+                        <li class="nav-item"><a class="nav-link active" href="#home" style="font-weight: bold;color: #444b54;font-size: 20px;">HOME</a></li>
+                        <li class="nav-item d-flex justify-content-between align-items-center"><a class="nav-link" href="#about" style="color: #444b54;font-weight: bold;font-size: 20px;">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team" style="color: #444b54;font-weight: bold;font-size: 20px ;">USERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}" style="font-weight: bold;color: #444b54;font-size: 20px;">LOGIN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'register' %}" style="color: #444b54;font-weight: bold;font-size: 20px;">SIGNUP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- about us page -->
+    {% load static %}
+    <section id="about" style="height: 100vh;background: url('{%static 'assetsh/img/about.png' %}') center / cover;">
+        <div class="about-container" style="height: 100vh;">
+            <div class="container text-break text-start d-block justify-content-center" style="height: 100vh;width: 50%;margin: 0px;padding: 20px 20px;">
+                <h1 style="font-size: 30px;text-align: center;font-family: Aclonica, sans-serif;color: #77bacb;margin: 40px 20px;height: 40px;width: 520px;margin-bottom: 0px;">about us</h1>
+                <p class="text-break d-block float-none" style="width: 555px;height: 400px;padding: 20px;"><br>Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Distinctio&nbsp;suscipit&nbsp;hic&nbsp;sunt&nbsp;tempora&nbsp;vero&nbsp;et,&nbsp;porro&nbsp;eius&nbsp;expedita&nbsp;dolorem&nbsp;ad&nbsp;repellat&nbsp;recusandae&nbsp;dolores&nbsp;cumque&nbsp;culpa&nbsp;enim&nbsp;labore&nbsp;necessitatibus&nbsp;quo.<br><br>Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Distinctio&nbsp;suscipit&nbsp;hic&nbsp;sunt&nbsp;tempora&nbsp;vero&nbsp;et,&nbsp;porro&nbsp;eius&nbsp;expedita&nbsp;dolorem&nbsp;ad&nbsp;repellat&nbsp;recusandae&nbsp;dolores&nbsp;cumque&nbsp;culpa&nbsp;enim&nbsp;labore&nbsp;necessitatibus&nbsp;quo.<br><br>Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Distinctio&nbsp;suscipit&nbsp;hic&nbsp;sunt&nbsp;tempora&nbsp;vero&nbsp;et,&nbsp;porro&nbsp;eius&nbsp;expedita&nbsp;dolorem&nbsp;ad&nbsp;repellat&nbsp;recusandae&nbsp;dolores&nbsp;cumque&nbsp;culpa&nbsp;enim&nbsp;labore&nbsp;necessitatibus&nbsp;quo.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <!-- user entry to dash board -->
+    <!-- <section id="user" style="height: 80vh;background-color: aliceblue; background-size: cover;
+    background-position: center;">
+        <h1 style="font-size: 30px;font-family: Aclonica, sans-serif;text-align: center;color: #7cb8eb;font-weight: bold;height: 40px;filter: brightness(64%) contrast(123%); padding-top: 15px;">user based dashboard entry</h1>
+        <div class="container" style="height: 80vh;width: 100vw;margin: 0px;padding: 10px;">
+            <div class="row d-flex flex-row justify-content-evenly flex-nowrap" style="height: 80vh;margin: 0px;">
+                <div class="col-md-3" style="width: 340px;height: 274px;background: var(--bs-light);padding: 0px;"></div>
+                <div class="col-md-3" style="width: 340px;height: 274px;padding: 0px;background: var(--bs-light);"></div>
+                <div class="col-md-3" style="width: 340px;height: 274px;padding: 0px;background: var(--bs-light);"></div>
+            </div>
+        </div> 
+        /* <div class="row">
+            <div class="user1">
+              <img src="/public/assets/usericon.png" alt="">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div class="user2">
+              <img src="/public/assets/usericon.png" alt="">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div class="user3">
+              <img src="/public/assets/usericon.png" alt="">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div class="user4">
+              <img src="/public/assets/usericon.png" alt="">
+              <h2></h2> 
+              <p></p>
+            </div>
+          </div> */
+    </section> --> 
+
+    <!-- card view -->
+    <section id="team">
+        <div class="container my-3 py-5 text-centre" style="text-align: center;">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1 style="font-size: 36px;
+                    color: #4f83d1;
+                    font-weight: bold;">users</h1>
+                    <p style="font-size: 24px;
+                    color: #333;
+                    font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div> 
+            </div>
+            <div class="row" style="margin: 0px 10px;">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3 style="font-family: poppins;font-size: 26px; font-weight: bold;">manufacturers</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">oxygen manufacture <a href="">click here</a> to go to dashboard</h5>
+                            <h5 style="font-family: poppins; font-size: 19px;text-align: start;">vaccine manufacturer <a href="">click here</a> to go to dashboard</h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">oxygen manufacturer</button>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">vaccine Manufacturer</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Distributers</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">oxygen distributer <a href="">click here</a> to go to dashboard</h5>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">vaccine distributer <a href="">click here</a> to go to dashboard</h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">oxygen distributer</button>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">vaccine distributer</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Importers</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">oxygen importers <a href="">click here</a> to go to dashboard</h5>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">vaccine importers <a href="">click here</a> to go to dashboard</h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">oxygen impoters</button>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">vaccine impoters</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3 style="font-family: poppins;font-size: 26px; font-weight: bold;">Hospitals</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">To access and maintain oxygen database <a href="">click here</a>. Lorem ipsum dolor sit amet  consectetur adipisicing elit.Tempore laboriosam quis</h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">oxygen database</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 20px 10px;">
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3 style="font-family: poppins;font-size: 26px; font-weight: bold;">Hospitals</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">To access and maintain vaccine and vaccination database <a href="">click here</a></h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">vaccine database</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3 style="font-family: poppins;font-size: 26px; font-weight: bold;">Vaccination centres</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">To access to vaccine and vaccination database <a href="">click here</h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">vaccine database</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>General Users</h3>
+                            <h5 style="font-family: poppins; font-size: 19px; text-align: start;">To get access to dasboard. Lorem ipsum dolor sit amet <a href="">click here</a></h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">user's dashboard</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            {% load static %}
+                            <img src="{%static '/assetsh/img/usericon.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Indigeneous</h3>
+                            <h5 style="font-family: poppins; font-size: 16.5px; text-align: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laboriosam quis voluptatum <a href="">click here</a></h5>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <button type="submit">Indigeneous</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">lorem ipsum</a></li>
+                        <li><a href="#">lorem ipsum</a></li>
+                        <li><a href="#">lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>ALIVE</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">ALIVE © 2021</p>
+        </div>
+    </footer>
+    {% load static %}
+    <script src="{%static 'assetsh/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
+
+
+
